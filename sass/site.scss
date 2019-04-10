@@ -1,0 +1,43 @@
+body {
+	background-color: #151515;
+	color: #dedede;
+}
+
+.sidebar {
+	background-image: url('/background.jpg');
+	background-repeat: no-repeat;
+	background-size: 200%;
+
+	.sidebar-about {
+		h1 {
+			font-size: 35px;
+		}
+	
+		.lead {
+			text-align: justify;
+			font-size: 15px;
+			color: #dedede;
+		}
+	}
+}
+
+
+.posts {
+	.post {
+		.post-summary {
+			display: block;
+			margin-bottom: 1rem;
+			color: #dedede;
+		}
+	}
+}
+
+h1, h2, h3, h4 {
+	color: #dfdfdf
+}
+
+.post {
+	.post-title, .post-title a {
+		color: #dfdfdf;
+	}
+}

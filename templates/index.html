@@ -1,0 +1,31 @@
+{% extends "hyde/templates/index.html" %}
+
+{% block extra_head %}
+<!-- css -->
+<link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) }}">
+
+<!-- font -->
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+{% endblock extra_head %}
+
+{% block sidebar_nav %}
+<li class="sidebar-nav-item"><a href="https://github.com/urriel"><i class="fab fa-github"></i> Github</a></li>
+<li class="sidebar-nav-item"><a href="https://www.linkedin.com/in/vincentdalmaso/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+{% endblock sidebar_nav%}
+
+{% block content %}
+<div class="posts">
+		{% for page in section.pages | reverse %}
+			<div class="post">
+				<h1 class="post-title">
+					<a href="{{ page.permalink }}">
+						{{ page.title }}
+					</a>
+				</h1>
+
+				<span class="post-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
+				<span class="post-summary">{{ page.description }}</span>
+			</div>
+		{% endfor %}
+</div>
+{% endblock content %}

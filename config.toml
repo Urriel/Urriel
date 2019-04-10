@@ -1,0 +1,20 @@
+title = "Vincent Dal Maso"
+description = "Software Engineer and Rustacean on my free time. Loving cloud and software architecture, I use my experience and knowlegde to help my clients solve their problems"
+
+# The URL the site will be built for
+base_url = "https://urriel.github.io"
+
+theme = "hyde"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+[extra]
+# Put all your custom variables here
