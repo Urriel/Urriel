@@ -1,14 +1,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://urriel.github.io/Urriel/</loc>
+            <loc>https://urriel.github.io/Urriel/about-me/</loc>
+            
+                <lastmod>2019-07-04</lastmod>
             
         </url>
     
         <url>
-            <loc>https://urriel.github.io/Urriel/about-me/</loc>
-            
-                <lastmod>2019-07-04</lastmod>
+            <loc>https://urriel.github.io/Urriel/</loc>
             
         </url>
     
