@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://urriel.github.io/sitemap.xml
+Sitemap: https://urriel.github.io/Urriel/sitemap.xml
