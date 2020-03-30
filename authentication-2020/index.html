@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>Vincent Dal Maso Authentication in 2020</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https:&#x2f;&#x2f;urriel.github.io&#x2f;Urriel&#x2f;print.css" media="print">
+      <link rel="stylesheet" href="https:&#x2f;&#x2f;urriel.github.io&#x2f;Urriel&#x2f;poole.css">
+      <link rel="stylesheet" href="https:&#x2f;&#x2f;urriel.github.io&#x2f;Urriel&#x2f;hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+<meta name="og:title" content="Authentication in 2020" />
+<meta name="description" content="Evolution of authentication through the ages" />
+<meta name="og:description" content="Evolution of authentication through the ages" />
+<meta name="author" content="Vincent Dal Maso" />
+<meta name="og:type" content="article" />
+
+
+<!-- css -->
+<link rel="stylesheet" href="https:&#x2f;&#x2f;urriel.github.io&#x2f;Urriel&#x2f;site.css">
+
+<!-- font -->
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2f;&#x2f;urriel.github.io&#x2f;Urriel&#x2f;"><h1>Vincent Dal Maso</h1></a>
+                            
+                            <p class="lead">Software Engineer and Rustacean on my free time. Loving cloud and software architecture, I use my experience and knowlegde to help my clients solve their problems</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+<li class="sidebar-nav-item"><a href="https://github.com/urriel" title="urriel's Github Profile"><i class="fab fa-github"></i> Github</a></li>
+<li class="sidebar-nav-item"><a href="https://www.linkedin.com/in/vincentdalmaso/" title="Vincent's LinkedIn Profile"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+<a href="https://dev.to/urriel"><i class="fab fa-dev" title="Vincent's DEV Profile"></i> Dev.to</a>
+
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title">Authentication in 2020</h1>
+  <span class="post-date">2020-03-30</span>
+  <h1 id="authentication-in-2020">Authentication in 2020</h1>
+<p>First of all, in light of the different leaks of user profiles and passwords happening all over the world, it seems like authentication in the web is broken. And nothing is seriously done to prevent user accounts from being hacked. Historically, it is not new to get hacked and it is connected to our authentication method.</p>
+<h2 id="authentication-before-2015">Authentication before 2015</h2>
+<p>Since the avent of internet, users have always been required a username and password in order to get authenticated by a web application. With our lousy memory, we tend to use the same password several times or change only a letter to uppercase when needed by the password validation. In most cases, we use <a href="https://thehackernews.com/2017/12/data-breach-password-list.html">extremely simple passwords</a>, and it result on our account being hacked. It is even easier now that the past leaks have created a huge database of logins available to anyone.
+As a developer, passwords should be handle with uttermost care. Although, some careless developer still keep those passwords as plain text in their databases. Consequently providing easy data for future leaks.</p>
+<h2 id="authentication-after-2015">Authentication after 2015</h2>
+<p>For the sake of security, around 2015 started a new trend in authentication, &quot;Two Factor Authentication&quot; or 2FA. This method of authentication is mainly based on a username and password in addition of a code sent one way or another to a user's owned device. It has been confirmed that 2FA could prevent <a href="https://enterprise.verizon.com/resources/reports/dbir/">95%</a> of attacks on a web application. Still, in 2020 it is not commonly used, Why ?
+Their is several causes:</p>
+<ul>
+<li>Users tend to get bothered by multi steps authentications.</li>
+<li>Security is not a first priority for Management or developers, even if it can damage the company's reputation.</li>
+<li>Including 2FA is time consuming.</li>
+<li>Entrusting another company with its users database is tough.</li>
+</ul>
+<h2 id="authentication-in-2020-1">Authentication in 2020</h2>
+<p>Nowadays &quot;Multi Factor Authentication&quot; or MFA is becoming a buzzword when we talk about authentication. But we are still years behind when it comes to securing user accounts. Nevertheless their is options to remedy to the situation.</p>
+<h3 id="multi-factor-authentication">Multi Factor Authentication</h3>
+<p>MFA is a standard today, used by most of the tech giants and it should be democratized. It can be added to your software by open source libraries or third party services. Although it can be sensitive to entrust another company to handle your user database, even so, they put their reputation on the line by providing this sort of service.</p>
+<h3 id="passwordless-authentication">Passwordless Authentication</h3>
+<p>With the avent of MFA, a new trend is now emerging. Passwordless authentication. The goal is to replace the username/password step commonly used on the web, by a link sent to your e-mail address, only or combined with other authentication steps. This prevent the user from typing its password and thus remove the human issue from the equation.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>It is a duty to secure our user accounts. If it is not for the company reputation, it should be for our self-esteem as a developer, architect or manager. Delivering a secure web application to our users should be a goal in 2020. So which decisions are you going to take to secure your users ?</p>
+<p><em>MFA -&gt; <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">https://en.wikipedia.org/wiki/Multi-factor_authentication</a></em></p>
+<p><em>Microsoft Passwordless white paper -&gt; <a href="https://www.microsoft.com/en-us/security/business/identity/passwordless">https://www.microsoft.com/en-us/security/business/identity/passwordless</a></em></p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>
